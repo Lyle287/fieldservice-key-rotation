@@ -1,0 +1,18 @@
+{
+  "name": "fieldservice-key-rotation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-strip-types src/rotation_service.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test test/rotation_decision.test.ts"
+  },
+  "dependencies": {
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.3"
+  }
+}
